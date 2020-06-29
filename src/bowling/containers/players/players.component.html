@@ -1,0 +1,15 @@
+<form class="players" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <ng-container formArrayName="players" *ngIf="players">
+    <ng-container *ngFor="let item of players.controls; let i = index">
+      <ng-container [formGroupName]="i">
+        <js-input-form-container icon="user">
+          <input data-au="player" type="text"  formControlName="name" placeholder="Name" />
+        </js-input-form-container>
+        <js-message-error class="players__error" [formGroup]="item" controlName="name"></js-message-error>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+  <button class="players__sumbit" data-au="submit" type="submit">
+    New Game
+  </button>
+</form>

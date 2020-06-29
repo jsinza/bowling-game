@@ -1,0 +1,31 @@
+.results {
+
+  &__controls {
+    margin: auto 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    background-color: #0f9675;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+
+    &:before {
+      opacity: 1;
+    }
+    &--exit{
+      background-color: #ad040a;
+    }
+  }
+}

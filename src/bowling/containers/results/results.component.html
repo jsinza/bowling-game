@@ -1,0 +1,12 @@
+<div class="results">
+  <div class="results__content">
+    <js-bowling-board [players]="players$ | async">
+
+    </js-bowling-board>
+    <div class="results__controls">
+      <button class="results__button" (click)="onRestart()">Restart game</button>
+      <button class="results__button results__button--exit" (click)="onExit()">Exit</button>
+    </div>
+  </div>
+
+</div>
