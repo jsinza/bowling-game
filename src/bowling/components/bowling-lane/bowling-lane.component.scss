@@ -1,0 +1,181 @@
+.bowling-lane {
+  background-color: transparent;
+  width: 1000px;
+  background-color: #d0a915fc;
+  margin: auto;
+
+  &__content {
+    background-color: transparent;
+    position: relative;
+    right: 360px;
+  }
+
+  &__dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    z-index: 5;
+    position: relative;
+
+    &--3 {
+      left: 18px;
+    }
+
+    &--2 {
+      top: 10px;
+      left: 6px;
+    }
+
+    &--1 {
+      left: 10px;
+      top: 5px;
+    }
+  }
+
+  &__lastball {
+    position: relative;
+    border: 1px solid white;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    left: 370px;
+    bottom: 70px;
+    display: block;
+    border-radius: 50px;
+    //animation: ball 8s forwards linear;
+    /*Safari and Chrome:*/
+    //-webkit-animation: ball 8s forwards linear;
+
+  }
+
+  &__ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 22px;
+    right: 1px;
+    border: 1px solid white;
+  }
+
+  &__line {
+    width: 800px;
+    height: 77px;
+    background-color: transparent;
+    position: relative;
+    top: 90px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    float: left;
+    left: 385px;
+  }
+
+  &__allpins {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 1129px;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__pin {
+    border: none;
+    background-color: transparent;
+    height: 70px;
+    width: 25px;
+    position: relative;
+
+    &--10 {
+      left: 45px;
+      bottom: 570px;
+      z-index: 1;
+    }
+
+    &--9 {
+      left: 45px;
+      bottom: 475px;
+      z-index: 2;
+    }
+
+    &--8 {
+      left: 45px;
+      bottom: 380px;
+      z-index: 4;
+    }
+
+
+    &--7 {
+      left: 45px;
+      bottom: 280px;
+      z-index: 5;
+    }
+
+    &--6 {
+      left: 30px;
+      bottom: 280px;
+      z-index: 2;
+    }
+
+    &--5 {
+      left: 30px;
+      bottom: 188px;
+      z-index: 3;
+    }
+
+    &--4 {
+      left: 30px;
+      bottom: 85px;
+      z-index: 5;
+    }
+
+
+    &--3 {
+      left: 15px;
+      bottom: 60px;
+      z-index: 3;
+    }
+
+    &--2 {
+      top: 35px;
+      left: 15px;
+      z-index: 5;
+    }
+
+    &--1 {
+      top: 90px;
+      z-index: 4;
+    }
+  }
+
+  &__strike {
+    height: 240px;
+    top: -90px;
+    left: 50%;
+    position: relative;
+  }
+
+  &__pin-bottom {
+    height: 50px;
+    width: 20px;
+    border-radius: 10px/20px;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  &__pin-top {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 3px solid red;
+    border-radius: 50px;
+  }
+
+}

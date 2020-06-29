@@ -1,0 +1,30 @@
+<div class="bowling-board">
+  <table class="bowling-board__table" *ngIf="players && players.count()>0">
+    <thead class="bowling-board__head">
+      <tr>
+        <th rowspan="2">Player</th>
+        <ng-container *ngFor="let item of [].constructor(frameCount); let i = index ;trackBy:i">
+          <th [attr.colspan]="i+1 ==frameCount ?3:2">{{i+1}}</th>
+        </ng-container>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody *ngFor=" let player of players.toList() ;let x = index ;trackBy:x">
+      <tr>
+        <th rowspan="2" scope="row">
+          {{ player.name }}
+        </th>
+        <ng-container *ngFor="let frame of player.frames.toList() ;let y = index ;trackBy:y">
+          <th *ngFor="let roll of frame.rolls.toList(); let w = index ;trackBy:w">{{ roll | rollScore:(w+1):frame }}
+          </th>
+        </ng-container>
+        <th rowspan="2">{{ player.score }}</th>
+      </tr>
+      <tr>
+        <ng-container *ngFor="let frame of player.frames.toList() ;let z = index ;trackBy:z">
+          <th [colSpan]="frame.rolls.count()">{{ frame.score }}</th>
+        </ng-container>
+      </tr>
+    </tbody>
+  </table>
+</div>

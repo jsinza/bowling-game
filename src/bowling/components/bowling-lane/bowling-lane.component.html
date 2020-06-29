@@ -1,0 +1,57 @@
+<div class="bowling-lane">
+  <div class="bowling-lane__content">
+    <div class="bowling-lane__line">
+      <img class="bowling-lane__strike" src="/assets/img/strike.gif" />
+    </div>
+    <div class="bowling-lane__allpins">
+      <div class="bowling-lane__pin bowling-lane__pin--1" [@pin1]="fallebPin(1)?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--2" [@pin2]="fallebPin(2) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--3" [@pin3]="fallebPin(3) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--4" [@pin4]="fallebPin(4) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--5" [@pin5]="fallebPin(5) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--6" [@pin6]="fallebPin(6) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--7" [@pin7]="fallebPin(7) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--8" [@pin8]="fallebPin(8) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--9" [@pin9]="fallebPin(9) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+      <div class="bowling-lane__pin bowling-lane__pin--10" [@pin10]="fallebPin(10) ?'standing':'overthrow'">
+        <div class="bowling-lane__pin-top"></div>
+        <div class="bowling-lane__pin-bottom"></div>
+      </div>
+    </div>
+    <div class="bowling-lane__lastball" [@ballThrow]=" !throw ? '' : 'throw'"
+      (@ballThrow.done)="captureDoneEvent($event)">
+      <div class="bowling-lane__dot bowling-lane__dot--1"></div>
+      <div class="bowling-lane__dot bowling-lane__dot--2"></div>
+      <div class="bowling-lane__dot bowling-lane__dot--3"></div>
+      <div class="bowling-lane__ball" [style.background-color]="color"></div>
+    </div>
+  </div>
+
+</div>
