@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.app {
+  &__header {
+    position: relative;
+    text-align: center;
+    padding: 35px 0;
+  }
+
+  &__title {
+    font-size: xx-large;
+  }
+
+  &__logo {
+    width: 75px;
+  }
+
+  &__content {
+    margin: 0 auto 50px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1134px;
+    border-radius: 4px;
+  }
+
+  &__container {
+    padding: 35px;
+  }
+
+  &__footer {
+    border-radius: 0 0 4px 4px;
+    background: hsl(165, 82%, 32%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+}
