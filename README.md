@@ -1,27 +1,34 @@
-# BowlingGame
+# bowling game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+esta aplicación permite simular una partida de bolos entre dos jugadores
 
-## Development server
+### Instalación y ejecución 🔧
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. instalar node
+2. git clone https://github.com/jsinza/bowling-game.git
+3. cd bowling-game.git
+4. instalar dependencias
 
-## Code scaffolding
+```
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. run:
 
-## Build
+```
+npm run start
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+para acceder  utiliza la siguiente url.
 
-## Running unit tests
+```
+http://localhost:4200/bowling
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ejecutando las pruebas ⚙️
 
-## Running end-to-end tests
+Para ejecutar las pruebas unitarias lo puedes realizar mediante el comando.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+npm run test
+```
